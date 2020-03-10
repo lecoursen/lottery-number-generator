@@ -7,6 +7,4 @@ def lottery_number_generator(i = 6)
     arr
 end
 
-6.times do
-  p lottery_number_generator
-end
+6.times { p lottery_number_generator }
