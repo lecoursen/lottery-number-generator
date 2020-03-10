@@ -1,12 +1,12 @@
 def lottery_number_generator(i = 6)
-  i.times do
-    numbers = []
-    while numbers.length < 6
-      i = rand(50)
-      numbers << i unless numbers.include?(i)
+  arr = []
+    while arr.length < i
+      num = rand(50)
+      arr << num unless arr.include?(num)
     end
-    p "The winning numbers are #{numbers}."
-  end
+    arr
 end
 
-lottery_number_generator(10)
+6.times do
+  p lottery_number_generator
+end
