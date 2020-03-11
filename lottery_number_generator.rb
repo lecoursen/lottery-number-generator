@@ -1,10 +1,10 @@
-def lottery_number_generator(i = 6)
-  arr = []
-  while arr.length < i
+def lottery_number_generator(lottery_balls = 6)
+  lottery_numbers = []
+  while lottery_numbers.length < lottery_balls
     num = rand(50)
-    arr << num unless arr.include?(num)
+    lottery_numbers << num unless lottery_numbers.include?(num)
   end
-  arr
+  lottery_numbers
 end
 
 6.times { p lottery_number_generator }
